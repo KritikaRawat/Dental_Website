@@ -1,0 +1,380 @@
+@media screen and (max-width: 991px){
+    .image{
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+@media screen and (max-width: 486px){
+    .Chatbtn{
+        width: 100%;
+    }
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .big-feature-container,#second-big-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-heading-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .diff-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hover-card{
+        width: 100%;
+    }
+
+    .first .boxy {
+        flex-basis: 50%;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        padding-left: 40px;
+    }
+
+    /* .first .l{
+        padding-left: 10px;
+    } */
+
+    .footer1{
+        margin-top: -120px;
+    }
+    /* .footer1 .footerwave{
+        margin-top: -120px;
+    } */
+
+    .hover-link{
+        margin-top: 2px;
+        font-size: 15px;
+        width: 140px;
+        height: 40px;
+        padding: 3px 10px;
+    }
+
+    .logo img{
+        width: 60%;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    .header-left{
+        margin-left: 0;
+    }
+    
+    .diff-section{
+        height: 900px;
+    }
+
+    .toothing img{
+        box-shadow: none;
+    }
+
+    .featureimg img{
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .featuredesc{
+        margin-top: -50px;
+        margin-bottom: 30px;
+    }
+
+    .featuredesc p{
+        width: 300px;
+    }
+
+    /* .image .details h2 {
+        font-size: 30px;
+    } */
+    
+    /* .section-col img{
+        width: 50px;
+    } */
+
+    /* .section-col{
+        flex-direction: reverse;
+    } */
+    .footer-col p {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .row2{
+        flex-direction: row;
+    }
+    .Vsheading{
+        padding-bottom: 20px;
+    }
+    .footer1 .footerwave {
+        margin-top: -114px;
+    }
+
+    /* .footer-col {
+        width: 50%;
+        padding: 0 20px;
+    } */
+
+    /* .footer-col img{
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+    
+    } */
+    .footer-col {
+        width: 50%;
+        padding: 0px 12px;
+        line-height: 30px;
+        /* gap: 10px; */
+    } 
+    
+    .footer-col img {
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+    .footer-col h3{
+        color: #2fbdcd;
+        font-size: 20px;
+        margin-bottom: 10px;
+    
+    }
+     .l h4{
+        font-size: 15px;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .rboxycontent .phone .email{
+        font-size: 10px;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    /* .footer1 .footerwave{
+        margin-top: -110px;
+    } */
+    .footer1 .footerwave {
+        margin-top: -114px;
+    }
+
+    /* .first .l{
+        padding-left: 10px;
+    } */
+    .first .boxy {
+        flex-basis: 50%;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        padding-left: 40px;
+    }
+    .footer-col h3{
+        color: #2fbdcd;
+        font-size: 20px;
+        margin-bottom: 10px;
+    
+    }
+    .footer-col p {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .big-feature-container,#second-big-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-heading-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .diff-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .toothing img{
+        box-shadow: none;
+    }
+    .featureimg img{
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .featuredesc{
+        margin-top: -50px;
+        margin-bottom: 30px;
+    }
+    .Vsheading{
+        
+        padding-bottom: 20px;
+    }
+
+    /* .Vsheading{
+        width: 100%;
+    } */
+
+    /* .diff2contain{
+        width: 400px;
+    } */
+
+    /* .section-col img{
+        width: 100px;
+    } */
+
+    /* .section-col{
+        flex-direction: reverse;
+    } */
+    .row2{
+        flex-direction: row;
+    }
+
+    .featuredesc p{
+        width: 300px;
+        /* margin-left: 20px; */
+    }
+
+    .footer-col {
+        width: 50%;
+        padding: 0px 11px;
+        line-height: 30px;
+        /* gap: 10px; */
+    } 
+    .footer-col img {
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+
+    .l h4{
+        font-size: 15px;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .rboxycontent .phone .email{
+        font-size: 10px;
+        width: 100px;
+    }
+
+}
+
+
+
+@keyframes animateWave
+{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+    
+}
+@keyframes animateWave2
+{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    
+}
+
+@media (max-width: 400px){
+    .image .details p{
+        font-size: 16px;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;  
+    }
+    
+    .first .boxy {
+        flex-basis: 50%;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        padding-left: 40px;
+    }
+
+    .first .boxy 
+
+    /* .first .l{
+        padding-left: 10px;
+    } */
+
+    .l h4{
+        font-size: 15px;
+    }
+    
+
+    .featuredesc p{
+        width: 300px;
+        /* margin-left: 20px; */
+    }
+
+    .footer-col h3{
+        color: #2fbdcd;
+        font-size: 20px;
+        margin-bottom: 10px;
+    
+    }
+    .footer-col p {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .footer-col {
+        width: 50%;
+        padding: 0px 12px;
+        line-height: 30px;
+        /* gap: 10px; */
+    } 
+    .Vsheading{
+        padding-bottom: 20px;
+    }
+    .footer-col img {
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+    .footer1 .footerwave {
+        margin-top: -114px;
+    }
+
+    .rboxycontent .phone .email{
+        font-size: 14px;
+        width: 100px;
+    }
+}
+

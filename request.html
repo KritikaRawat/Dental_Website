@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Request Call Back</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+            }
+            .mainkrapper{
+            margin: 20px auto;
+            margin-bottom: -50px;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: none;
+            }
+
+            .mainkrapper .headsy{
+             margin-left: 15px;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                background: #1a477b;
+                background-image: url(Images/Header7.jpg);
+                display: flex;;
+                align-items: center;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                
+
+                
+            }
+            form{
+                width: 400px;
+                height: auto;
+                padding: 40px;
+                background: rgb(255,255,255,0.5);
+                border-radius: 10px;
+                box-shadow: inset -2px 2px 2px rgb(26,71,123);
+            }
+
+            form label{
+                margin-left: 110px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            form input{
+                margin-top: 5px;
+                margin-left: 110px;
+                height: 28px;
+                
+                border-radius: 7px;
+                outline: none;
+                border: 1px solid grey;
+                padding: 0 10px;
+            }
+            form h2{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+                text-align: center;
+                padding-bottom: 6px;
+                text-shadow: 2px 2px 2px rgb(73, 186, 218);
+                border-bottom: solid 2px white;
+            }
+            form select{
+                margin-left: 110px;
+                margin-top: 5px;
+            }
+            .btn{
+                background-color: aliceblue;
+                border-radius: 30px;
+                border-color: rgb(71, 71, 202);
+                color: black;
+                font-size: 15px;
+                font-weight: 800;
+                padding: 3px 15px;
+                margin-left: 90px;
+                cursor: pointer;
+                margin-left: 130px;
+            }
+
+            .popup{
+                width: 250px;
+                height: 180px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                border-color: #1a477b;
+                border-style: solid;
+                position: absolute;
+                margin-left: 20px;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0.1);
+                text-align: center;
+                padding: 0 30px 30px;
+                color: #333;
+                visibility: hidden;
+                transition: transform 0.4s, top 0.4s;
+            }
+            .open-popup{
+                visibility: visible;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            .popup img{
+                width: 80px;
+                margin-top: -50px;
+                border-radius: 50%;
+                box-shadow: 0 2px 5px rgba(0, 0, blue, alpha);
+            }
+
+            .popup h2{
+                font-size: 38px;
+                font-weight: 500;
+                margin: 5px 0 10px;
+            }
+
+            .popup button{
+                width: 100%;
+                margin-top: 20px;
+                padding: 10px;
+                background: #539aa9;
+                color: white;
+                border: 0;
+                outline: none;
+                font-size: 18px;
+                border-radius: 4px;
+                cursor: pointer;
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            .imagesmile{
+                height: 490px;
+                width: 500px;
+            }
+            #toothsy{
+                max-width: 100%;
+                float: right;
+                height: 490px;
+                width: 500px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <img id="toothsy" src="Images/Header7.jpg"> -->
+        <div class="mainkrapper">
+            <div class="headsy">
+                <!-- <h1>Aligners Treatment Plan</h1>  -->
+                <form name="submit-to-google-sheet">
+                    <h2>Request For A Call</h2>
+                    <br>
+                    <br>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <br><br>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <br><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="text" name="phoneNumber" placeholder="Phone Number" size="10" required>
+                    <br><br>
+                    <label for="response">Where did you hear about us?</label><br>
+                    <select name="response">
+                        <option value="Social Media">Social Media</option>
+                        <option value="Relatives">Relatives</option>
+                        <option value="Newspapers">Newspapers</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br><br><br>
+                    <div class="container">
+                        <input type="submit" class="btn" onclick="openPopup()" name="submit">
+                    </div>
+                    <div class="popup" id="popup">
+                        <img src="Images/404-tick.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopup()">Ok</button>
+                    </div>
+                    <br><br>
+        
+                    <span id="success"></span>
+                </form>
+            </div>
+        </div>
+        
+        <!-- <img class="imagesmile" src="Images/Header7.jpg">
+        <form name="submit-to-google-sheet">
+            <h2>Request For A Call</h2>
+            <br>
+            <br>
+            <label>Name:</label><br>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <br><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" name="phoneNumber" placeholder="Phone Number" size="10" required>
+            <br><br>
+            <label for="response">Where did you hear about us?</label><br>
+            <select name="response">
+                <option value="Social Media">Social Media</option>
+                <option value="Relatives">Relatives</option>
+                <option value="Newspapers">Newspapers</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br><br>
+            <div class="container">
+                <input type="submit" class="btn" onclick="openPopup()" name="submit">
+            </div>
+            <div class="popup" id="popup">
+                <img src="Images/404-tick.png">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">Ok</button>
+            </div>
+            <br><br>
+
+            <span id="success"></span>
+        </form> -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz7je3kI7ELvcViLvwM3sA6W-MuneTU_yBxR7w7KzY6x3hEGoj6geEW4nOabnLuDFfZ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const success=document.getElementById('success');
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    success.innerHTML="Data Successfully Submitted";
+
+                    setTimeout(function(){
+                        success.innerHTML="";
+                    }, 4000) //After 5 sec
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+
+            let popup=document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            } 
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            } 
+        </script>
+    </body>
+</html>
